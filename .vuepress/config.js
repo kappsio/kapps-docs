@@ -12,6 +12,10 @@ module.exports = {
         '@vuepress/active-header-links',
         '@vuepress/medium-zoom',
     ],
+
+    markdown: {
+      lineNumbers: false
+    },
   
     themeConfig: {
 
@@ -20,10 +24,13 @@ module.exports = {
         nav: [
             { text: 'Home', link: '/' },
             { text: 'CMS', link: '/cms/' },
+            { text: 'Example', link: '/example/' },
             { text: 'kapps.io', link: 'http://kapps.io' },
         ],
 
         sidebar: {
+
+            '/example/': ["/example/","/example/emoji.md"],
 
             '/cms/': [
                 {
